@@ -429,33 +429,59 @@ env.close()
 ## Output
 
 ```text
+
+
+
 Final Q-table:
-
-
+[[0. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]]
 
 Estimated State-Value Function:
-
-
-
-
-
-
+[[0. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]]
+Name:JAWAHAR RAJ N
+Register Number:212223240057
 
 Learned Policy:
+[['L' 'L' 'L' 'L']
+ ['L' 'L' 'L' 'L']
+ ['L' 'L' 'L' 'L']
+ ['L' 'L' 'L' 'L']]
+
+Average reward over last 1000 episodes: 0.0
 
 
-
-
-
-Average reward over last 1000 episodes: 
 ```
 
 
 ---
 
+
+
 ## Result
 ```text
-
+The Monte Carlo Control algorithm was successfully implemented using
+the Gymnasium FrozenLake-v1 environment. The agent generated complete
+episodes and estimated the action-value function Q(s,a) using Monte
+Carlo returns. An epsilon-greedy strategy was used to balance
+exploration and exploitation. The learned Q-values were used to
+extract the final greedy policy.
 
 
 ```
@@ -463,8 +489,14 @@ Average reward over last 1000 episodes:
 
 ## Inference
 ```text
-
-
+The experiment demonstrates that Monte Carlo Control can learn an
+effective policy from complete episodes without requiring a model of
+the environment. As the number of episodes increases, the Q-values
+are updated using observed returns and the policy gradually improves.
+The epsilon-greedy strategy allows the agent to explore different
+actions initially and gradually exploit the actions with higher
+Q-values. The final policy helps the agent reach the goal while
+avoiding the holes in the FrozenLake environment.
 
 ```
 
